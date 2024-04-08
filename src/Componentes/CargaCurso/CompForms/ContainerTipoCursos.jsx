@@ -1,3 +1,4 @@
+import Costo from "./Costo";
 import Cupos from "./Cupos";
 import DiasCursado from "./DiasCursado";
 import TipoCurso from "./TipoCurso";
@@ -8,6 +9,7 @@ const ContainerTipoCursos = () => {
             <TipoCurso/>
             <DiasCursado/>
             <Cupos/>
+            <Costo/>
         </>
     )
 }
