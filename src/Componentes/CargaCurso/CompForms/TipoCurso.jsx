@@ -10,7 +10,7 @@ const TipoCurso = () => {
     };
 
     return(
-        <div className="container my-3">
+        <div className="container my-2">
             <div className="row">
                 <div className="col">
                     <label>Tipo de curso:</label>

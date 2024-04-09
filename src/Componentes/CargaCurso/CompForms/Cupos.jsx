@@ -6,30 +6,32 @@ const Cupos = () => {
     const [cupos, setCupos] = useState("");
 
     const cambioCupos = (event) => {
-        setCupos(event.target.value);
+        const newValue = event.target.checked ? event.target.value : "";
+        setCupos(newValue);
     };
+    
 
     return (
         (curso === "2" || curso === "3") ? (
             <div className="container">
-                <div className="row">
+                <div className="row mb-3">
                     <label className="mb-2">Se requieren cupos en este curso?</label>
                     <div className="col-md-1">
                         <div className="form-check form-check-inline">
-                            <input className="form-check-input mr-5" type="radio" id="inlineRadio1" name="inlineRadioOptions" value="Si" onChange={cambioCupos} style={{ border: "1px solid black" }} />
-                            <label className="form-check-label" htmlFor="inlineRadio1">Si</label>
+                            <input className="form-check-input mr-5" type="checkbox" id="inlineCheckbox1" value="Si" onChange={cambioCupos} checked={cupos === "Si"} style={{ border: "1px solid black" }}/>
+                            <label className="form-check-label" htmlFor="inlineCheckbox1">Si</label>
                         </div>
                     </div>
                     <div className="col-md-1">
                         <div className="form-check form-check-inline">
-                            <input className="form-check-input" type="radio" id="inlineRadio2" name="inlineRadioOptions" value="No" onChange={cambioCupos} style={{ border: "1px solid black" }} />
-                            <label className="form-check-label" htmlFor="inlineRadio2">No</label>
+                            <input className="form-check-input" type="checkbox" id="inlineCheckbox2" value="No" onChange={cambioCupos} checked={cupos === "No"} style={{ border: "1px solid black" }}/>
+                            <label className="form-check-label" htmlFor="inlineCheckbox2">No</label>
                         </div>
                     </div>
                 </div>
                 {(cupos === "Si") ? (
                     <div className="row">
-                        <label className="mt-3 mb-1">Ingrese la cantidad de cupos necesarios</label>
+                        <label className="mb-1">Ingrese la cantidad de cupos necesarios</label>
                         <div className="col">
                             <input className="mb-3 text-center" type="number" placeholder="Cupos Necesarios"/>
                         </div>
