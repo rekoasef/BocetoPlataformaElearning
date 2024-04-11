@@ -6,7 +6,7 @@ const DiasCursado = () => {
     const { curso } = useContext(CursoContext);
 
     return (
-            (curso === "2") ? (
+        (curso === "2" || curso === "3" || curso === "1") ? (
                 <div className="container">
                     <div className="row mb-3">
                         <label className="mt-3">Dias de cursado:</label>
