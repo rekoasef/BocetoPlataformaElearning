@@ -7,7 +7,7 @@ const DuracionCurso = () =>{
         (curso === "2" || curso === "3") ? (
         <div className="container">
             <div className="row">
-                <label className="mb-3">Duración Curso (Expresar en minutos)</label>
+                <label className="mb-3">Duración Curso (Expresar en Horas)</label>
                 <div className="col">
                     <input 
                         type="number" 

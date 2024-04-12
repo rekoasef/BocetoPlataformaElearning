@@ -17,8 +17,9 @@ const CompAbajo = () =>{
                         <li className="mb-2">Modalidad: Online</li>
                         <li className="mb-2">Cupos disponibles: 25</li>
                         <li className="mb-2">Duración: 10 Horas</li>
+                        <li className="mb-2">Nombre del Profesor: Santiago Trillini</li>
                         <li className="mb-2">Dia de cursado: Lunes y Miercoles</li>
-                        <li className="mb-2">Hora de cursado: 10am</li>
+                        <li className="mb-2">Hora de inicio y fin de clase online: De 10:00 a 11:30am</li>
                         <li className="mb-2">Costo: Gratis</li>
                         <button className="btn btn-danger my-4">Inscribirse</button>
                     </ul>
